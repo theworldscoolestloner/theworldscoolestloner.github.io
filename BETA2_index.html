@@ -7,6 +7,23 @@
 <meta property="description" content="The world's coolest loner (or so he thinks.)" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+  
+  .left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+
+}
+
 @font-face {
 	font-family: vcr;
 	src: url(fonts/VCR-OSD-Mono.ttf);
@@ -31,15 +48,6 @@ td {
 		
 }
 
-.left, .right {
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-}
-
-.main {
-  float: left;
-  width: 60%; /* The width is 60%, by default */
-}
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
